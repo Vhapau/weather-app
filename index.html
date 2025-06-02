@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>WEATHER</title>
+  </head>
+  <body>
+     <div id="map"></div>
+    <div class="content">
+    <header>
+      <h1>Weather App</h1>
+    </header>
+
+    <div id="current-datetime"></div>
+    <form>
+      <label for="city">Enter City</label>
+      <input type="text" id="city" placeholder="e.g. polokwane" />
+      <button type="submit">Get Weather</button>
+    </form>
+    <div class="Weather-info">
+      <h2>City Name</h2>
+      <p>Temperature: --°C</p>
+      <p>Condition: --</p>
+      <p>Humidity: --%</p>
+      <p>Wind: --Km/h</p>
+      <p>Rain: --%</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
