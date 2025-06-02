@@ -4,7 +4,7 @@ document.querySelector("form").addEventListener("submit", async function (e) {
   const city = document.getElementById("city").value.trim();
   if (!city) return;
 
-  const apiKey = "6a24f94e9b749e41b3670058660896a8"; // Replace with your OpenWeatherMap API key
+  const apiKey = "6a24f94e9b749e41b36700586"; // Replace with your OpenWeatherMap API key
   const cityQuery = `${city},ZA`; // Always search in South Africa
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(
     cityQuery
